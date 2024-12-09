@@ -1,0 +1,10 @@
+^D:\AI\CODE AI\CHAPTER_07\BUILD\CMAKEFILES\9E504941E853BE5979F7E552FD9434AB\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/AI/code AI/CHAPTER_07" "-BD:/AI/code AI/CHAPTER_07/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/AI/code AI/CHAPTER_07/build/chapter_07.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
